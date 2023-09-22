@@ -21,8 +21,8 @@ public class SistemaGestionTurnos {
                     System.out.println("Se ha tomado el turno " + contadorTurnos);
                     break;
                 case 2:
-                    if (!colaEspera.isEmpty()) {
-                        int turnoLlamado = colaEspera.poll();
+                    if (!colaEspera()) {
+                        int turnoLlamado = colaEspera();
                         System.out.println("Se ha llamado al cliente con el turno " + turnoLlamado);
                     } else {
                         System.out.println("No hay clientes en la cola de espera");
